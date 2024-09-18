@@ -1,0 +1,258 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de header */
+
+header{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    height: 180px;
+}
+
+header div a{
+    display: flex;
+    justify-content: center;
+    
+}
+
+header nav ul{
+    list-style: none;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: gray;
+    padding: 4px;
+}
+
+header div a img{
+    height: 130px;
+}
+
+header div{
+    padding-bottom: 0.5rem;
+}
+
+/* estilos del main */
+main{
+    text-align: center;
+    padding: 30px;
+    background-color: gray;
+    
+}
+main h1{
+    margin-bottom: 20px;
+}
+
+    /*  estilos de mobile galeria  */
+
+.tituloGaleria{
+    text-align: center;
+
+}
+
+.contenedorFotos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 1.5rem;
+    }
+
+
+
+    .mainImagen img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+
+/* estilos de mobile biografia */
+.mainBiografia div{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloBiografia{
+    padding: 2rem;
+}
+
+.imagenesBiografia img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.tituloParrafo{
+    padding-top: 1rem;
+}
+
+
+/*  estilos de mobile automoviles  */
+.mainAutomoviles div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulosAutomoviles{
+    padding: 2rem;
+}
+
+.imagenesAutomoviles img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.parrafoAutomoviles{
+    padding-top: 1rem;
+}
+
+/* estilos de mobile ubicacion  */
+.mapaUbicacion iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ubicacionTitulo{
+    padding-top: 1rem;
+}
+
+.ubicacionTitulo, .ubicacionSubtitulo{
+    text-align: center;
+}
+
+.ubicacionSubtitulo{
+    padding: 2rem;
+}
+
+.mapaUbicacion{
+  padding-top: 1.5rem;
+}
+
+
+/* estilos de mobile index principal  */
+.imagenIndexPrincipal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+    /* estilos del footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+@media screen and (min-width:1024px) {
+
+    /*  estilos de pc automoviles  */
+.contenedorImagenes{
+    display: flex;
+    justify-content: center;
+
+}
+
+.titulosAutomoviles{
+    padding: 2rem;
+}
+
+
+.imagenesAutomoviles{
+   margin: 0 auto;
+}
+
+.imagenesAutomovilesImola{
+    margin: 0% auto;
+}
+
+.imagenesAutomovilesImola{
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+}
+
+.imagenesAutomoviles img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  estilos de pc index principal */
+
+.imagenIndexPrincipal img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+
+/*  estilos de pc biografia  */
+
+.mainBiografia div {
+display: flex;
+flex-direction: column;
+
+}
+
+.tituloBiografia{
+    padding: 2rem;
+}
+
+.imagenesBiografia img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.tituloParrafo{
+    padding-top: 1rem;
+}
+
+
+/*  estilos de pc ubicacion  */
+.mapaUbicacion iframe{
+    height: 500px;
+    width: 50%;
+    object-fit: cover;
+}
+
+
+/*  estilos de pc galeria */
+
+.tituloGaleria{
+    text-align: center;
+}
+
+.contenedorFotos{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(1,1fr);
+    row-gap: 1.5rem;
+
+    }
+
+    .mainImagen img{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+}
+
+
+
