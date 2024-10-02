@@ -1,0 +1,22 @@
+//mixin flex
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@mixin direction{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@mixin height-width{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+

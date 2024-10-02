@@ -1,0 +1,206 @@
+//import de variables
+@import "../utilidades/variables";
+
+//import de mixin
+
+@import "../utilidades/mixin";
+
+/* estilos main */
+
+.mainIndex{
+    text-align: center;
+    padding: 30px;
+    background-color: $colorPrimario;
+
+    .horacio{
+        margin-bottom: 20px;
+        color: black;
+
+
+    }
+
+    .imagenIndexPrincipal{
+        height: 300px;
+        margin: 0 auto;
+        border: $colorSecundario solid 3px;
+        img{
+            @include height-width;
+        }
+    }
+
+    .imagenIndexDos{
+        height: 300px;
+        margin: 0 auto;
+        border: $colorSecundario solid 3px;
+        img{
+            @include height-width;
+        }
+    }
+
+    .textoIndex{
+        padding: 1rem;
+    }
+        
+        
+}
+/* estilos de mobile biografia */
+
+.mainBiografia{
+    background-color:$colorPrimario;
+    .direccion{
+        @include direction;
+        .tituloBiografia{
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .imagenesBiografia{
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            img{
+                border: $colorSecundario solid 3px;
+                @include height-width;
+                
+            }
+        }
+
+        .tituloParrafo{
+            padding: 1rem;
+        }
+    }
+}
+
+
+/* estilos de mobile galeria */
+.mainGaleria{
+    background-color:$colorPrimario ;
+   .tituloGaleria{
+    text-align: center;
+    padding: 3rem 0px;
+    }
+
+    .contenedorFotos{
+             display: grid;
+            grid-template-columns: 1fr;
+             grid-template-rows: repeat(3,1fr);
+             row-gap: 1.5rem;
+
+             .mainImagen{
+                width: 90%;
+                margin: 0 auto;
+                img{
+                    border: $colorSecundario 3px solid;
+                    @include height-width;
+                }
+                
+             }
+
+             .ultimaFoto{
+                margin-bottom: 1rem;
+             }
+    } 
+
+
+}
+
+/* estilos mobile ubicacion */
+
+.mainUbicacion{
+    background-color: $colorPrimario;
+    .ubicacionTitulo{
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .ubicacionSubtitulo{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .tituloFabrica{
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .mapaUbicacion{
+        padding-top: 1.5rem;
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+        iframe{
+            @include height-width;
+        }
+    }
+
+    .tituloDatosFabrica{
+        text-align: center;
+       
+    }
+    .datosFabrica{
+        background-color: $colorPrimario;
+        text-align: center;
+        padding-bottom: 3rem;
+        h4{
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+/* estilos de mobile automoviles */
+
+.mainAutomoviles{
+    background-color: $colorPrimario;
+    .direccionAutomoviles{
+        @include direction;
+
+        .titulosAutomoviles{
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contenedorImagenes{
+            .imagenesAutomoviles{
+                width: 90%;
+                height: 300px;
+                margin: 0 auto;
+                border: $colorSecundario solid 3px;
+                img{
+                    @include height-width;
+                }
+            }
+        }
+
+        .imagenesAutomoviles{
+            width: 90%;
+            height: 300px;
+            margin: 0 auto;
+            border: $colorSecundario solid 3px;
+            img{
+                @include height-width;
+            }
+        }
+
+        .parrafoAutomoviles{
+            padding: 1rem;
+        }
+
+        .titulosAutomovilesImola{
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+
+/* estilos de footer */
+
+footer{
+    background-color: $colorSecundario;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+

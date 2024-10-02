@@ -1,0 +1,39 @@
+//import
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* estilos desktop */
+
+ @media screen and (min-width:1024px) {
+    .mainIndex{
+        .imagenIndexPrincipal{
+            width: 60%;
+        }
+    }
+
+    .mainGaleria{
+        .contenedorFotos{
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(2 ,40%);
+            column-gap: 1,5rem;
+        }
+    }
+
+    .mainUbicacion{
+        .mapaUbicacion{
+            width: 60%;
+            height: 500px;
+        }
+    }
+
+    .mainAutomoviles{
+        .direccionAutomoviles{
+            
+            .imagenesAutomoviles{
+                width: 70%;
+                height: 450px;
+            }
+        }
+    }
+ }

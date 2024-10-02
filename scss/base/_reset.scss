@@ -1,0 +1,52 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*  reset */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: $colorSecundario;
+    position: sticky;
+    top: 0px;
+    height: 180px;
+    
+
+    .logo{
+        padding-bottom: 0.5rem;
+        
+            a{
+                @include flex;
+                img{
+                    height: 130px;
+                }
+            }
+        
+    }
+
+    
+
+    nav{
+        ul{
+            list-style: none;
+            gap: 5px;
+            @include flex;
+            align-items: center;
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: $colorPrimario;
+                    padding: 4px;  
+                }
+            }
+        }
+
+
+    }
+}
