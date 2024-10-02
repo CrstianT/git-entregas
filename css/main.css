@@ -55,14 +55,7 @@ header nav ul li a {
   object-fit: cover;
 }
 .mainIndex .imagenIndexDos {
-  height: 300px;
-  margin: 0 auto;
-  border: black solid 3px;
-}
-.mainIndex .imagenIndexDos img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  display: none;
 }
 .mainIndex .textoIndex {
   padding: 1rem;
@@ -157,6 +150,7 @@ header nav ul li a {
 .mainUbicacion .datosFabrica {
   background-color: gray;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .mainUbicacion .datosFabrica h4 {
   margin-bottom: 10px;
@@ -219,7 +213,14 @@ footer {
     margin-bottom: 1rem;
   }
   .mainIndex .imagenIndexDos {
+    display: block;
     height: 700px;
+    border: black solid 3px;
+  }
+  .mainIndex .imagenIndexDos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .mainBiografia .direccion .imagenesBiografia {
     width: 80%;
@@ -250,6 +251,9 @@ footer {
 @media screen and (min-width: 1024px) {
   .mainIndex .imagenIndexPrincipal {
     width: 60%;
+  }
+  .mainIndex .imagenIndexDos {
+    display: none;
   }
   .mainGaleria .contenedorFotos {
     display: grid;

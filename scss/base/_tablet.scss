@@ -14,7 +14,12 @@
         }
 
         .imagenIndexDos{
+            display: block;
             height: 700px;
+            border: $colorSecundario solid 3px;
+            img{
+                @include height-width;
+            }
 
         }
     }
